@@ -1,6 +1,6 @@
 {
   "name": "react-protfolio-website-1",
-  "homepage": "https://ohad2245.github.io/Test",
+  "homepage": "",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,8 +21,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy" : "gh-pages - d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
