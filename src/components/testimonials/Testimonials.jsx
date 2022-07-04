@@ -29,7 +29,7 @@ const data = [
   {
     avatar: AVTR3,
     name:'Shay Gali',
-    review:'bla bla bla bla bla bla bla bla bla bla bla'
+    review:'From my acquaintance with Ohad, he is a serious and responsible person, he loves to help others and he is not afraid of challenges even from the most difficult.'
   },
   {
     avatar: AVTR4,
