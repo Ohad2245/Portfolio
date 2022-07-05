@@ -6,7 +6,7 @@ const Services = () =>{
   return (
     <section id="services">
       <h5>What I Offer</h5>
-      <h2>Services</h2>
+      <h2>Courses</h2>
 
       <div className='container service__container'>
         <article className='service'>
@@ -16,28 +16,17 @@ const Services = () =>{
             <ul className='service__list'>
               <li>
                 <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                <p>illustrator</p>
               </li>
               <li>
                 <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                <p>Photoshop</p>
               </li>
               <li>
                 <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                <p>Lorem ipsum</p>
               </li>
-              <li>
-                <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-              </li>
-              <li>
-                <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-              </li>
-              <li>
-                <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-              </li>
+    
             </ul>
           </article>
           {/* END OF UI/UX */}
@@ -48,59 +37,51 @@ const Services = () =>{
             <ul className='service__list'>
               <li>
                 <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                <p>React Native</p>
               </li>
               <li>
                 <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                <p>Angular</p>
               </li>
               <li>
                 <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                <p>Android Studio</p>
               </li>
               <li>
                 <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-              </li>
-              <li>
-                <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-              </li>
-              <li>
-                <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                <p>Type Script</p>
               </li>
             </ul>
           </article>
           {/* WEB DEVELOPMENT */}
           <article className='service'>
             <div className='service__head'>
-              <h3>Content Creation</h3>
+              <h3>Server side</h3>
             </div>
             <ul className='service__list'>
               <li>
                 <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                <p>Data Structures</p>
               </li>
               <li>
                 <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                <p>Full Stack - asp.net scapy</p>
               </li>
               <li>
                 <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                <p>Computer vision</p>
               </li>
               <li>
                 <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                <p>NodeJS</p>
               </li>
               <li>
                 <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                <p>Crypto</p>
               </li>
               <li>
                 <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+                <p>Algorithmic trading & Cryptocurrencies</p>
               </li>
             </ul>
           </article>

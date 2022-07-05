@@ -9,7 +9,6 @@ header{
     text-align:center;
     height: 100%;
     position: relative;
-    
 }
 
 /* ================= CTA ================= */
@@ -18,7 +17,6 @@ header{
     display: flex;
     gap: 1.2em;
     justify-content: center;
-
 }
 
 /* ================= Header Socials ================= */
