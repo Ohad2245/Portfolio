@@ -31,16 +31,16 @@ const data = [
     name:'Shay Gali',
     review:'From my acquaintance with Ohad, he is a serious and responsible person, he loves to help others and he is not afraid of challenges even from the most difficult.'
   },
-  {
-    avatar: AVTR4,
-    name:'Shoval Soli',
-    review:'bla bla bla bla bla bla bla bla bla bla bla'
-  },
-  {
-    avatar: AVTR4,
-    name:'Shir Feldman',
-    review:'bla bla bla bla bla bla bla bla bla bla bla'
-  },
+  // {
+  //   avatar: AVTR4,
+  //   name:'Shoval Soli',
+  //   review:'bla bla bla bla bla bla bla bla bla bla bla'
+  // },
+  // {
+  //   avatar: AVTR4,
+  //   name:'Shir Feldman',
+  //   review:'bla bla bla bla bla bla bla bla bla bla bla'
+  // },
 ]
 const Testimonials = () => {
   return (
@@ -71,4 +71,4 @@ const Testimonials = () => {
   )
 }
 
-export default Testimonials
+export default Testimonials;
