@@ -4,7 +4,7 @@ import './testimonials.css'
 import AVTR1 from '../../assets/shoval.jpeg'
 import AVTR2 from '../../assets/roy.jpg'
 import AVTR3 from '../../assets/shay.jpeg'
-import AVTR4 from '../../assets/avatar4.jpg'
+// import AVTR4 from '../../assets/avatar4.jpg'
 
 
 // import Swiper core and required modules

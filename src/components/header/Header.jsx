@@ -4,8 +4,8 @@ import CTA from './CTA'
 // import ME from '../../assets/me.png'
 import HeaderSocials from './HeaderSocials'
 import Typical from 'react-typical';
-import particlesConfig from '../config/particles-config';
-import Particles from 'react-tsparticles';
+// import particlesConfig from '../config/particles-config';
+// import Particles from 'react-tsparticles';
 
 
 const Header = () => {
