@@ -6,7 +6,7 @@ import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
-
+import {motion} from 'framer-motion';
 
 const data = [
   {
@@ -47,12 +47,13 @@ const data = [
   {
     id:6,
     image:IMG5,
-    title:'Crypto Currency Dashboard',
-    github:"https://github.com/Ohad2245",
-    demo:"https://github.com/Ohad2245"
+    title:'Movie',
+    github:"https://github.com/Ohad2245/Movie",
+    demo:"https://movieohad.netlify.app/"
   },
 ]
 const Portfolio = () => {
+  const transition = {duration: 2 , type: 'spring'}
     return (
       <section id="portfolio">
         <h5>My Recent Work </h5>
@@ -63,7 +64,12 @@ const Portfolio = () => {
               return(
                 <article key={id} className="portfolio__item">
               <div class="portfolio__item-image">
-                <img src={image} alt={title}/>
+                <motion.img 
+                  initial={{left: '-36%'}}
+                  whileInView={{left: '-24%'}}
+                  transition={transition}
+                
+                src={image} alt={title}/>
               </div>
               <h3>{title}</h3>
               <div class="portfolio__item-cta">

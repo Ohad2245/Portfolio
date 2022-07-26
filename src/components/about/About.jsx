@@ -6,20 +6,22 @@ import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
 import Typical from 'react-typical';
+import {motion} from 'framer-motion';
+
 //  FaInfinity in column 4
 const about = () => {
+  const transition = {duration: 2 , type: 'spring'}
+
   return (
     <section id='about'>
       <h5>Get To Know</h5>
       <h5>About Me</h5>
-
       <div className='container about__container'>
         <div className='about__me'>
           <div className='about__me-image'>
             <img src={ME} alt="About Image" />
           </div>
         </div>
-
         <div className='about__contact'>
           <div className='about__cards'>
           <article className='about__card'>
@@ -58,4 +60,4 @@ const about = () => {
   )
 }
 
-export default about
+export default about;

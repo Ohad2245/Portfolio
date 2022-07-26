@@ -7,7 +7,6 @@ import Typical from 'react-typical';
 // import particlesConfig from '../config/particles-config';
 // import Particles from 'react-tsparticles';
 
-
 const Header = () => {
   return (
     <header>
