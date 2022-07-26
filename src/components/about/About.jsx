@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react'
 import './about.css'
@@ -6,11 +7,10 @@ import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
 import Typical from 'react-typical';
-import {motion} from 'framer-motion';
+// import {motion} from 'framer-motion';
 
 //  FaInfinity in column 4
 const about = () => {
-  const transition = {duration: 2 , type: 'spring'}
 
   return (
     <section id='about'>
