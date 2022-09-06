@@ -14,7 +14,7 @@ const data = [
     image:IMG1,
     title:'Crypto',
     github:"https://github.com/Ohad2245/React-Native/tree/main/crypto",
-    demo:"https://github.com/Ohad2245"
+    demo:"https://ohasdgsdg.netlify.app/"
   },
   {
     id:2,
@@ -33,9 +33,9 @@ const data = [
   {
     id:4,
     image:IMG4,
-    title:'Calculator',
-    github:"https://github.com/Ohad2245/For-Fun/tree/main/Calculator",
-    demo:"https://github.com/Ohad2245/For-Fun/blob/main/Calculator/README.md"
+    title:'Weather',
+    github:"https://github.com/Ohad2245/Weather",
+    demo:"https://golden-churros-a1f4bd.netlify.app/"
   },
   {
     id:5,
