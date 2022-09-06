@@ -8,7 +8,6 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-
 }
 
 :root{
@@ -42,6 +41,7 @@ body{
     background: var(--color-bg);
     color:var(--color-white);
     line-height:1.7;
+    font-weight: 100;
     background-image:url('../src/assets/bg-texture.png')
 }
 
