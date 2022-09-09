@@ -9,15 +9,15 @@ import { BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
 
-  const countEl = document.getElementById('count');
-  countVisits();
-  function countVisits() {
-    fetch('https://api.countapi.xyz/update/laptop/mouse/?amount=1')
-    .then((res) => res.json())
-    .then((res) => {
-      countEl.innerHTML = res.value;
-    });
-  }
+  // const countEl = document.getElementById('count');
+  // countVisits();
+  // function countVisits() {
+  //   fetch('https://api.countapi.xyz/update/laptop/mouse/?amount=1')
+  //   .then((res) => res.json())
+  //   .then((res) => {
+  //     countEl.innerHTML = res.value;
+  //   });
+  // }
 
   return (
     <footer>
@@ -69,9 +69,10 @@ const Footer = () => {
         </a>
       </div>
 
-      
+        <h3>This page was viewed</h3>
         <h1 id="count">0</h1>
-      
+        <h3>times</h3>
+
 
       <div className="footer__copyright">
         <small>&copy; All rights reserved.</small>
