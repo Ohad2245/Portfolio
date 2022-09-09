@@ -20,11 +20,7 @@ const Services = () =>{
               </li>
               <li>
                 <BiCheck className='service__list-icon'/>
-                <p>Photoshop</p>
-              </li>
-              <li>
-                <BiCheck className='service__list-icon'/>
-                <p>Lorem ipsum</p>
+                <p>PhotoShop</p>
               </li>
     
             </ul>
@@ -35,6 +31,10 @@ const Services = () =>{
               <h3>Web Development</h3>
             </div>
             <ul className='service__list'>
+            <li>
+                <BiCheck className='service__list-icon'/>
+                <p>ReactJS</p>
+              </li>
               <li>
                 <BiCheck className='service__list-icon'/>
                 <p>React Native</p>
