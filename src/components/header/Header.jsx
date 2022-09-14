@@ -9,7 +9,7 @@ import Typical from 'react-typical';
 
 const Header = () => {
   return (
-    <header>
+    <header >
         <div className=".container header__container">
           <Typical
               steps={[
