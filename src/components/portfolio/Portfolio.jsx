@@ -18,39 +18,40 @@ const data = [
   },
   {
     id:2,
+    image:IMG5,
+    title:'Movie',
+    github:"https://github.com/Ohad2245/Movie",
+    demo:"https://movieohad.netlify.app/"
+  },
+  {
+    id:3,
     image:IMG2,
     title:'Tik Tak Toe',
     github:"https://github.com/Ohad2245/React-Native/tree/main/Tic-Tac-Toe",
     demo:"https://github.com/Ohad2245"
   },
   {
-    id:3,
+    id:4,
     image:IMG3,
     title:'Nike Store',
     github:"https://github.com/Ohad2245/React-Native/tree/main/StoreApp2/my-app",
     demo:"https://github.com/Ohad2245/React-Native/blob/main/StoreApp2/my-app/README.md"
   },
   {
-    id:4,
+    id:5,
     image:IMG4,
     title:'Weather',
     github:"https://github.com/Ohad2245/Weather",
     demo:"https://golden-churros-a1f4bd.netlify.app/"
   },
   {
-    id:5,
+    id:6,
     image:IMG6,
     title:'Snake',
     github:"https://github.com/Ohad2245/Java/tree/main/SnakeGame",
     demo:"https://github.com/Ohad2245/Java/blob/main/SnakeGame/README.md"
   },
-  {
-    id:6,
-    image:IMG5,
-    title:'Movie',
-    github:"https://github.com/Ohad2245/Movie",
-    demo:"https://movieohad.netlify.app/"
-  },
+  
 ]
 const Portfolio = () => {
   const transition = {duration: 2 , type: 'spring'}
