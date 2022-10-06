@@ -14,7 +14,7 @@ const data = [
     image:IMG1,
     title:'Crypto',
     github:"https://github.com/Ohad2245/React-Native/tree/main/crypto",
-    demo:"https://ohasdgsdg.netlify.app/"
+    demo:"https://cryptoappohad.netlify.app/"
   },
   {
     id:2,
