@@ -11,31 +11,47 @@ import Typical from 'react-typical';
 
 //  FaInfinity in column 4
 const about = () => {
-
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
   return (
     <section id='about'>
       <h5>Get To Know</h5>
       <h5>About Me</h5>
-      <div className='container about__container'>
-        <div className='about__me'>
+      <div className='container about__container reveal'>
+        <div className='about__me reveal'>
           <div className='about__me-image'>
             <img src={ME} alt="About Image" />
           </div>
         </div>
-        <div className='about__contact'>
-          <div className='about__cards'>
-          <article className='about__card'>
-            <FaAward className='about__icon'/>
+        <div className='about__contact reveal'>
+          <div className='about__cards reveal'>
+          <article className='about__card '>
+            <FaAward className='about__icon '/>
             <h5>Experience</h5>
             <small> +2 Study experience</small>
           </article>
-          <article className='about__card'>
-            <FiUsers className='about__icon'/>
+          <article className='about__card '>
+            <FiUsers className='about__icon '/>
             <h5>Courses</h5>
             <small>GPA 94</small>
           </article>
-          <article className='about__card'>
-            <VscFolderLibrary className='about__icon'/>
+          <article className='about__card '>
+            <VscFolderLibrary className='about__icon reveal'/>
             <h5>Projects</h5>
             <small>10+ Completed projects </small>
           </article>
@@ -53,7 +69,7 @@ const about = () => {
           
             </p>
 
-            <a href="#contact" className="btn btn-primary">Let's Talk</a>
+            <a href="#contact" className="btn btn-primary reveal">Let's Talk</a>
         </div>
       </div>
     </section>

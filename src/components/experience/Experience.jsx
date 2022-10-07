@@ -3,17 +3,34 @@ import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 
 const Experience = () => {
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
   return (
     <section id="experience">
       <h5>The Skills I Have</h5>
       <h2>My Experience</h2>
 
-      <div class="container experience__container">
-        <div class="experience__fronted">
+      <div class="container experience__container reveal">
+        <div class="experience__fronted reveal">
           <h3> Fronted Development</h3>
           <div class="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
+            <article className="experience__details ">
+              <BsPatchCheckFill className="experience__details-icon  " />
               <div>
                 <h4>ReactJS</h4>
                 <small className="text-light">Experienced</small>
@@ -64,7 +81,7 @@ const Experience = () => {
           </div>
         </div>
         {/* END OF FRONTED */}
-        <div class="experience__backend">
+        <div class="experience__backend reveal">
           <h3> Backend Development</h3>
           <div class="experience__content">
             <article className="experience__details">

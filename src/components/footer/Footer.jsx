@@ -8,19 +8,26 @@ import { BsLinkedin } from "react-icons/bs";
 
 
 const Footer = () => {
-
-  // const countEl = document.getElementById('count');
-  // countVisits();
-  // function countVisits() {
-  //   fetch('https://api.countapi.xyz/update/laptop/mouse/?amount=1')
-  //   .then((res) => res.json())
-  //   .then((res) => {
-  //     countEl.innerHTML = res.value;
-  //   });
-  // }
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
 
   return (
-    <footer>
+    <footer className="footer reveal">
       <a href="#" className="footer__logo">
         JUMP UP
       </a>

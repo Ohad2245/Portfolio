@@ -54,17 +54,36 @@ const data = [
   
 ]
 const Portfolio = () => {
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
   const transition = {duration: 2 , type: 'spring'}
     return (
       <section id="portfolio">
+      <section className="reveal">
         <h5>My Recent Work </h5>
         <h2> Portfolio</h2>
-        <div class="container portfolio__container">
+        </section>
+        <div class="container portfolio__container reveal">
           {
             data.map(({id, image, title, github, demo}) => {
               return(
-                <article key={id} className="portfolio__item">
-              <div class="portfolio__item-image">
+                <article key={id} className="portfolio__item reveal">
+              <div className="portfolio__item-image">
                 <motion.img 
                   initial={{left: '-36%'}}
                   whileInView={{left: '-24%'}}
